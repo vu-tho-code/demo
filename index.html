@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VU STORE</title>
+    <style>
+        /* Tạo hiệu ứng nhấp nháy cho chữ */
+        .blinking-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            animation: blink-animation 1s steps(2, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <!-- Thêm Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!--ticker section start-->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker__item">Chào mừng đến với Vu Store! Khuyến mãi lớn trong tháng này!</div>
+            <div class="ticker__item">Mua ngay iPhone 15 Pro Max với giá chỉ từ 29.990.000 VND!</div>
+            <div class="ticker__item">Giảm giá đến 50% cho tất cả sản phẩm Samsung Galaxy!</div>
+            <div class="ticker__item">Miễn phí giao hàng toàn quốc!</div>
+            <div class="ticker__item">Đặc biệt khi mua hàng chúng tôi sẽ dâng hiến cho khách hàng 1 Jack trị giá 5 củ!</div>
+            <div class="ticker__item">Chúng tôi sẽ không bỏ khách hàng như Jack bỏ con!</div>
+            <div class="ticker__item">Hãy yên tâm khi mua hàng của chúng tôi!</div>
+            <div class="ticker__item">Uy tín số 1 Việt Nam!</div>
+            <div class="ticker__item">Bán hàng vì đam mê!</div>
+            
+        </div>
+    </div>
+    <!--ticker section end-->
+
+    <header>
+        <h1>VU STORE <span class="header-highlight">Khuyến mãi hấp dẫn bán rẻ như cho! FC ĐOM ĐÓM</span></h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Tìm kiếm sản phẩm...">
+        </div>
+        <div class="auth-buttons">
+            <button id="loginBtn">Đăng nhập</button>
+            <button id="cartBtn"><i class="fas fa-shopping-cart"></i> Giỏ hàng (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="main-content">
+            <aside class="sidebar">
+                <h2>Chọn thương hiệu</h2>
+                <select id="brandSelect">
+                    <option value="">-- Tất cả --</option>
+                    <option value="apple">Apple</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="oppo">Oppo</option>
+                    <option value="vivo">Vivo</option>
+                    <option value="honor">Honor</option>
+                    <option value="huawei">Huawei</option>
+                    <option value="google">Google</option>
+                </select>
+            </aside>
+            
+            <div class="slider">
+                <div class="slides">
+                    <img src="https://didongxanh.com.vn/_next/image?url=https%3A%2F%2Fdidongxanh.com.vn%2Fwp-content%2Fuploads%2F2024%2F08%2Fbanner-web-MOI.png&w=1920&q=75" alt="Quảng cáo 1">
+                    <img src="https://didongxanh.com.vn/_next/image?url=https%3A%2F%2Fdidongxanh.com.vn%2Fwp-content%2Fuploads%2F2024%2F07%2Fbanner-6.jpg&w=1920&q=75" alt="Quảng cáo 2">
+                    <img src="https://didongxanh.com.vn/_next/image?url=https%3A%2F%2Fdidongxanh.com.vn%2Fwp-content%2Fuploads%2F2024%2F09%2Fbanner-wweb.jpg&w=1920&q=75" alt="Quảng cáo 3">
+                    <img src="https://scontent.fdad1-2.fna.fbcdn.net/v/t1.15752-9/460477821_1062261195422491_681362548239837127_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFYCLAGBOtmickms_zdc62kmvgXyNJSndya-BfI0lKd3DEv-RY9WJR6j0wRRCrgnSrhHfDP1ZZT586-nyX7IwTH&_nc_ohc=7gjLQZS_aMYQ7kNvgFCKjsU&_nc_ht=scontent.fdad1-2.fna&oh=03_Q7cD1QGKI7_qpawNDqn9eQiJMV-hJkaZpjnniU5LoYrH0MM8lQ&oe=6721016C" alt="Quảng cáo 4">
+                </div>
+            </div>
+        </div>
+               <!-- Khối mới nằm bên phải slider -->
+               <div class="right-section">
+                <h2 class="blinking-text">Khuyến mãi đặc biệt!</h2>
+                <p class="blinking-text">Mua 1 điện thoại tặng 1 Jack!</p>
+                <img src="https://cdn.tuoitre.vn/zoom/720_450/2022/7/19/anh-vui-20-7-1-16582423533391097279678-crop-16582424005032037595478.jpg">
+
+            
+                <iframe width="80%" height="100" src="https://www.youtube.com/embed/4tYuIU7pLmI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+        
+    </main>
+    
+    <main>
+        <div class="product-list" id="product-list">
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Vu Store. Uy Tín Tạo Nên Sức Mạnh</p>
+            <p>Địa chỉ: Quế Thuận, Quế Sơn, Quảng Nam, Việt Nam</p>
+            <p>Số điện thoại: <a href="tel:+84123456789">0349320542</a></p>
+            <p>Email: <a href="mailto:info@vustore.com">ntvu2803@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/nguyentruong.vu04" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_nvzu28_/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@_nvzu28_?_t=8q7SxwW1Wfi&_r=1" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- Modal Đăng nhập -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <label for="username">Tên Đăng Nhập:</label>
+            <input type="text" id="username" placeholder="Nhập tên đăng nhập">
+            <label for="password">Mật Khẩu:</label>
+            <input type="password" id="password" placeholder="Nhập mật khẩu">
+            <button id="submitLogin">Đăng Nhập</button>
+        </div>
+    </div>
+
+    <!-- Modal Giỏ hàng -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-cart">&times;</span>
+            <h2>Giỏ Hàng</h2>
+            <div id="cartItems"></div>
+            <p id="totalPrice">Tổng giá: 0 VND</p>
+            <button id="checkoutBtn">Thanh Toán</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="notification" class="notification" style="display: none;"></div>
+    
+</body>
+</html>
